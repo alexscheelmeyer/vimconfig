@@ -15,7 +15,7 @@ endif
 
 let colors_name="birdsofparadise"
 
-  hi Normal             guifg=#ffffff ctermfg=15   guibg=#312321 ctermbg=236  gui=NONE
+  hi Normal             guifg=#ffffff ctermfg=15   guibg=#312321 ctermbg=235  gui=NONE
 
   hi Comment            guifg=#938a89 ctermfg=245  guibg=NONE    ctermbg=NONE gui=NONE
   hi Todo               guifg=bg      ctermfg=fg   guibg=#efcb43 ctermbg=221  gui=NONE
