@@ -1,6 +1,9 @@
 "This is to turn off vi compatibility, not sure why but many people reccomend it
 set nocp
 
+" make sure to use utf-8
+set encoding=utf-8
+setglobal fileencoding=utf-8
 
 "
 "Vundle setup
