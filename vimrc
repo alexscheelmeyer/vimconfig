@@ -26,6 +26,9 @@ filetype plugin indent on " required!
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
+"remapping leader
+let mapleader=","
+
 "Unmap arrow keys
 no <down> <Nop>
 no <left> <Nop>
@@ -72,7 +75,7 @@ set incsearch
 set showmatch
 set hlsearch
 "shortcut for removing highlights
-nnoremap <leader><cr> :noh<cr>
+nnoremap <leader>c :noh<CR>
 
 "Monaco is a great coderfont
 set guifont=Monaco:h13
@@ -109,9 +112,6 @@ set viminfo^=%
 
 "for faster searching map space to /
 nmap <space> /
-
-"remapping leader
-let mapleader=","
 
 "quick saving
 nmap <leader>w :w!<cr>
