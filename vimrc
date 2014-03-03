@@ -40,6 +40,8 @@ vno <left> <Nop>
 vno <right> <Nop>
 vno <up> <Nop>
 
+"dont complain when working on multiple files without saving all the time
+set hidden
 
 "Show line-numbers
 set number
