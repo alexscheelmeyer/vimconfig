@@ -72,7 +72,7 @@ set incsearch
 set showmatch
 set hlsearch
 "shortcut for removing highlights
-nnoremap <leader><space> :noh<cr>
+nnoremap <leader><cr> :noh<cr>
 
 "Monaco is a great coderfont
 set guifont=Monaco:h13
