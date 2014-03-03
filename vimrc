@@ -77,6 +77,12 @@ set shiftwidth=4
 "for airline footer
 set laststatus=2
 
+"remapping leader
+let mapleader=","
+
+"quick saving
+nmap <leader>w :w!<cr>
+
 "shortcuts to select tab directly
 map <D-1> :tabn 1<CR>
 map <D-2> :tabn 2<CR>
