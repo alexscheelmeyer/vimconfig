@@ -61,6 +61,19 @@ set go-=T
 "Need more space
 set lines=40
 
+"annoying to not be able to see where you go
+set scrolloff=3
+
+"always replace in entire file
+set gdefault
+
+"highlighting while searching
+set incsearch
+set showmatch
+set hlsearch
+"shortcut for removing highlights
+nnoremap <leader><space> :noh<cr>
+
 "Monaco is a great coderfont
 set guifont=Monaco:h13
 
@@ -82,11 +95,35 @@ set shiftwidth=4
 "for airline footer
 set laststatus=2
 
+"start of line is where whitespace ends
+nmap 0 ^
+nmap ^ 0
+
+" Return to last edit position when opening files
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
+" Remember info about open buffers on close
+set viminfo^=%
+
+"for faster searching map space to /
+nmap <space> /
+
 "remapping leader
 let mapleader=","
 
 "quick saving
 nmap <leader>w :w!<cr>
+
+"shortcut for trimming trailing whitespace
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+
+"quicker splits navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 "shortcuts to select tab directly
 map <D-1> :tabn 1<CR>
