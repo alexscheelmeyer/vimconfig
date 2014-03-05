@@ -99,8 +99,8 @@ set shiftwidth=4
 set laststatus=2
 
 "start of line is where whitespace ends
-nmap 0 ^
-nmap ^ 0
+nnoremap 0 ^
+nnoremap ^ 0
 
 " Return to last edit position when opening files
 autocmd BufReadPost *
