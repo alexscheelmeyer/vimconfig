@@ -164,3 +164,7 @@ let g:syntastic_javascript_checkers = ['eslint']
 "need default filetype for json to be json, not javascript
 au BufRead,BufNewFile *.json set filetype=json
 
+"colors in ubuntu
+if $COLORTERM == 'gnome-terminal'
+     set t_Co=256
+endif
