@@ -19,6 +19,7 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'bling/vim-airline'
 Bundle 'scrooloose/syntastic'
+Bundle 'jalcine/cmake.vim'
 
 filetype plugin indent on " required!
 
@@ -168,3 +169,7 @@ au BufRead,BufNewFile *.json set filetype=json
 if $COLORTERM == 'gnome-terminal'
      set t_Co=256
 endif
+
+"CMake
+map <leader>b :CMakeBuild<CR>
+
