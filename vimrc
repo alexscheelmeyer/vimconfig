@@ -18,6 +18,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'bling/vim-airline'
+Bundle 'scrooloose/syntastic'
 
 filetype plugin indent on " required!
 
@@ -90,10 +91,11 @@ nmap { {zz
 nmap } }zz
 
 "Set tabs
-set tabstop=4
-set softtabstop=4
-set noexpandtab
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+"set noexpandtab
+set expandtab
+set shiftwidth=2
 
 "for airline footer
 set laststatus=2
@@ -147,4 +149,18 @@ map! <D-8> <C-O>:tabn 8<CR>
 map! <D-9> <C-O>:tabn 9<CR>
 
 map <leader>s :e %:p:s,.h$,.X123X,:s,.c$,.h,:s,.X123X$,.c,<CR>
+
+"syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
+
+"need default filetype for json to be json, not javascript
+au BufRead,BufNewFile *.json set filetype=json
 
