@@ -163,7 +163,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
-let g:syntastic_cpp_include_dirs = ['lib', '../lib', '~/coding/github/cerebral/fileformat/src' ]
+let g:syntastic_cpp_include_dirs = [ expand('$HOME/coding/github/cerebral/fileformat/src'), expand('$HOME/coding/github/cerebral/lib')]
 
 "need default filetype for json to be json, not javascript
 au BufRead,BufNewFile *.json set filetype=json
