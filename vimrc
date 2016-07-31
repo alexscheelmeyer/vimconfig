@@ -163,6 +163,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
+let g:syntastic_cpp_include_dirs = ['lib', '../lib', '../src' ]
 
 "need default filetype for json to be json, not javascript
 au BufRead,BufNewFile *.json set filetype=json
