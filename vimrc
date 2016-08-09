@@ -6,22 +6,16 @@ set encoding=utf-8
 setglobal fileencoding=utf-8
 
 "
-"Vundle setup
+"Vim-plug setup
 "
-filetype off " required!
+call plug#begin('~/.vim/plugged')
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+Plug 'tpope/vim-fugitive'
+Plug 'bling/vim-airline'
+Plug 'scrooloose/syntastic'
+Plug 'jalcine/cmake.vim'
 
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-fugitive'
-Bundle 'bling/vim-airline'
-Bundle 'scrooloose/syntastic'
-Bundle 'jalcine/cmake.vim'
-
-filetype plugin indent on " required!
+call plug#end()
 
 
 " SWAP DIRECTORY
