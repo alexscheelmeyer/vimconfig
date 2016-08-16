@@ -116,6 +116,10 @@ nmap <leader>w :w!<cr>
 "shortcut for trimming trailing whitespace
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
+"natural splitting
+set splitbelow
+set splitright
+
 "quicker splits navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
