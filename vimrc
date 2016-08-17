@@ -5,6 +5,9 @@ set nocp
 set encoding=utf-8
 setglobal fileencoding=utf-8
 
+" for ultisnips to work
+filetype plugin indent on
+
 "
 "Vim-plug setup
 "
@@ -14,6 +17,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'bling/vim-airline'
 Plug 'scrooloose/syntastic'
 Plug 'jalcine/cmake.vim'
+Plug 'SirVer/ultisnips'
 
 call plug#end()
 
@@ -166,6 +170,14 @@ let g:syntastic_javascript_checkers = ['eslint']
 
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
 let g:syntastic_cpp_include_dirs = [ expand('$HOME/coding/github/cerebral/fileformat/src'), expand('$HOME/coding/github/cerebral/lib')]
+
+"Ultisnips config
+let g:UltiSnipsExpandTrigger="<Tab>"
+let g:UltiSnipsListSnippets="<C-s>"
+let g:UltiSnipsJumpForwardTrigger="<Tab>"
+let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsSnippetsDir="~/.vim/ultisnips"
 
 "need default filetype for json to be json, not javascript
 au BufRead,BufNewFile *.json set filetype=json

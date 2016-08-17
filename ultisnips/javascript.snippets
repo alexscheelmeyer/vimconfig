@@ -1,0 +1,27 @@
+snippet re "require shortcut" b
+const ${1:_} = require('${2:lodash}');
+endsnippet
+
+snippet desc "Mocha describe block" b
+describe('${1}', () => {
+	let sandbox;
+
+	beforeEach(() => {
+		sandbox = sinon.sandbox.create();
+	});
+
+	afterEach(() => {
+		sandbox.restore();
+	});
+
+	${2}
+});
+endsnippet
+
+snippet its "Mocha it-should block" b
+	it('should ${1}', (done) => {
+		${2}
+	});
+endsnippet
+
+
