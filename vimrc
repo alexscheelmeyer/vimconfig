@@ -18,6 +18,7 @@ Plug 'bling/vim-airline'
 Plug 'scrooloose/syntastic'
 Plug 'jalcine/cmake.vim'
 Plug 'SirVer/ultisnips'
+Plug 'scrooloose/nerdcommenter'
 
 call plug#end()
 
@@ -75,7 +76,7 @@ set incsearch
 set showmatch
 set hlsearch
 "shortcut for removing highlights
-nnoremap <leader>c :noh<CR>
+nnoremap <leader>h :noh<CR>
 
 "Monaco is a great coderfont
 set guifont=Monaco:h13
@@ -178,6 +179,13 @@ let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsSnippetsDir="~/.vim/ultisnips"
+
+"nerdcommenter
+let g:NERDSpaceDelims = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDCommentEmptyLines = 1
+nmap <silent> <leader>t <plug>NERDCommenterToggle
+vmap <silent> <leader>t <plug>NERDCommenterToggle
 
 "need default filetype for json to be json, not javascript
 au BufRead,BufNewFile *.json set filetype=json
