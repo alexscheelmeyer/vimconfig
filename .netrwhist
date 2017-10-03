@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/alex/coding/cerebral/plugin-nodes-client-ui'
+let g:netrw_dirhist_2='/Users/alex/coding/cerebral/ui-components/src/EditableText'
+let g:netrw_dirhist_3='/Users/alex/coding/github/TaskMateDash/dev'
+let g:netrw_dirhist_4='/Users/alex/coding/cerebral/ui-components/src/Dropdown'
+let g:netrw_dirhist_5='/Users/alex/coding/cerebral/type-validator/test'
+let g:netrw_dirhist_6='/Users/alex/coding/cerebral/frontend/node_modules/@cerebralio/ui-components'
+let g:netrw_dirhist_7='/Users/alex/coding/cerebral/frontend/node_modules/@cerebralio/ui-components/EditableText'

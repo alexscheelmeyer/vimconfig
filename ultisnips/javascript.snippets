@@ -74,3 +74,19 @@ app.listen(3000, function () {
 	console.log('Example app listening on port 3000!');
 });
 endsnippet
+
+snippet nock "nock record block" b
+const nock = require('nock'); // eslint-disable-line global-require
+nock.recorder.rec();
+endsnippet
+
+snippet all "fakeweb catch all" b
+const catchAll = fakeweb.registerUri({
+	uri: /^((?!127).)*$/,
+	body: '',
+});
+catchAll.hook = (uri) => {
+	console.log('uri is :', uri);
+};
+endsnippet
+

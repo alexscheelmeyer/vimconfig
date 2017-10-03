@@ -1,4 +1,4 @@
-"This is to turn off vi compatibility, not sure why but many people reccomend it
+"This is to turn off vi compatibility, some plugins require it
 set nocp
 
 " make sure to use utf-8
@@ -13,6 +13,8 @@ filetype plugin indent on
 "
 call plug#begin('~/.vim/plugged')
 
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'bling/vim-airline'
 Plug 'scrooloose/syntastic'
