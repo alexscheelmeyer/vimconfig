@@ -17,6 +17,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'bling/vim-airline'
+Plug 'ruanyl/vim-fixmyjs'
 Plug 'scrooloose/syntastic'
 Plug 'jalcine/cmake.vim'
 Plug 'SirVer/ultisnips'
@@ -200,3 +201,7 @@ endif
 "CMake
 map <leader>b :CMakeBuild<CR>
 
+"FixMyJS
+let g:fixmyjs_engine = 'eslint'
+let g:fixmyjs_rc_filename = ['.eslintrc', '.eslintrc.js']
+noremap <Leader>f :Fixmyjs<CR>
