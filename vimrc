@@ -205,3 +205,6 @@ map <leader>b :CMakeBuild<CR>
 let g:fixmyjs_engine = 'eslint'
 let g:fixmyjs_rc_filename = ['.eslintrc', '.eslintrc.js']
 noremap <Leader>f :Fixmyjs<CR>
+
+"Avoid large delay for pressing 'O'
+set timeout timeoutlen=1000 ttimeoutlen=100
