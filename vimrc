@@ -22,6 +22,8 @@ Plug 'scrooloose/syntastic'
 Plug 'jalcine/cmake.vim'
 Plug 'SirVer/ultisnips'
 Plug 'scrooloose/nerdcommenter'
+Plug 'rust-lang/rust.vim'
+Plug 'qnighy/lalrpop.vim'
 
 call plug#end()
 
