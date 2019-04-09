@@ -209,3 +209,6 @@ noremap <Leader>f :Fixmyjs<CR>
 
 "Avoid large delay for pressing 'O'
 set timeout timeoutlen=1000 ttimeoutlen=100
+
+"python checking is broken
+let g:syntastic_mode_map = { 'passive_filetypes': ['python'] }
