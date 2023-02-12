@@ -2,7 +2,7 @@ This is my config
 
 To use it clone from github into .vim :
 
-    git clone https://github.com/alexscheelmeyer/vimconfig.git
+    git clone https://github.com/alexscheelmeyer/vimconfig.git ~/.vim
 
 Remember to create the symlink for .vimrc :
 
